@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+           body {
+               background-color: #333;
+           }
+           #album {
+               /* background-color: green; */
+               margin-top: 100px;
+               text-align: center;  
+           }
+           img {
+               /* width: 200px; */
+               margin-left: -212px;
+               margin-right: -212px;
+               border: 10px solid white;
+               padding: 50px;
+               background-color: #222;
+               box-shadow: 0 0 5px 3px #111;
+               transition: 0.5s;
+           }
+           .i-1 {
+               transform:rotate(60deg);
+               }
+           .i-2 {
+                transform:rotate(30deg);
+            } 
+            .i-3 {
+                transform:rotate(0deg);
+            }  
+            .i-4 {
+                transform:rotate(-30deg);
+            }  
+            .i-5 {
+                transform:rotate(-60deg);
+            }
+            img:hover {
+                border-color: aqua;
+                transform: rotate(3600deg);
+                
+            }
+    </style>
+    <title>Global Album</title>
+</head>
+    <body>
+        <div id="album">
+            <img class="i-1" src="https://picsum.photos/id/866/300/500">
+            <img class="i-2" src="https://picsum.photos/id/564/300/500">
+            <img class="i-3" src="https://picsum.photos/id/51/300/500">
+            <img class="i-4"src="https://picsum.photos/id/651/300/500">
+            <img class="i-5"src="https://picsum.photos/id/351/300/500">
+        </div>
+    </body>
+</html>
