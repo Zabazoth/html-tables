@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #777;
+            margin: 0;
+        }
+        #navigation{
+            background-color: #555;
+            width: 220px;
+            box-shadow: 0 0 3px 2px #111;
+            margin-left: -220px;
+        }
+        #navigation:hover{
+            margin-left: 0;
+            transition: 0.5s;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        li{
+            padding: 15px 20px 15px 20px;
+            border-bottom: 1px solid #222;
+        }
+        #arrow{
+            font-size: 54px;
+            margin-left: 220px;
+            color: #555;
+            /* linlin' animations */
+            animation: flashing 3s infinite;
+
+        }
+        li:hover{
+            background-color: #888;
+        }
+        li:last-child:hover{
+            background-color: transparent;
+        }
+        /* ad rules animation in css*/
+        @keyframes flashing {
+            from{ color: #5558; }
+            to{ color: #555F; }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navigation">
+        <ul>
+            <li><a href=""> <img src="http://icons.iconarchive.com/icons/atti12/tv-series-folder/32/Dr-House-icon.png">  Home</a></li>
+            <li><a href=""> <img src="http://icons.iconarchive.com/icons/hadezign/hobbies/32/Photography-icon.png">  Photos</a></li>
+            <li><a href=""><img src="http://icons.iconarchive.com/icons/dryicons/aesthetica-2/32/community-users-icon.png">  Communities</a></li>
+            <li><a href=""><img src="http://icons.iconarchive.com/icons/johnathanmac/mavrick/32/Pages-icon.png">  Pages</a></li>
+            <li><a href=""><img src="http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/32/32364-hot-pepper-icon.png">  Hot</a></li>
+            <li><a id="arrow" href="">&#10261;</a></li>
+        </ul>
+    </nav>    
+</body>
+</html>
