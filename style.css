@@ -1,55 +1,38 @@
+/*CSS Reset*/
 body{
-    background-color: #333;
+    margin: 0;
 }
-#road{
-    background-color: brown;
-    height: 10px;
-    width: 500px;
-    margin-top: 600px;
+/*Styles*/
+body{
+    background-color: #131339;
 }
-#boby{
-    height: 20px;
-    width: 100px;
-    background-color: orangered;
-    padding-top: 80px;
-    transform: translateY(-132px);
-    animation: move 3s;
+#preloader{
+    height: 5vh;
+    width: 5vh;
+    border: 0.1vh solid #6666cc;
+    /*margin-top: 45.5vh;
+    margin-left: auto;
+    margin-right: auto;*/
+    margin: 47.4vh auto;
+    color: #6666cc;
+    line-height: 5vh;
+    text-align: center;
+    letter-spacing: 1px;
+    animation: rot 1s 5;
 }
-#boby>.legs{
-    width: 20px;
-    height: 20px;
-    margin-left: 40px;
+/* animation */
+@keyframes rot{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
 }
-#boby>.legs>div{
-    width: 10px;
-    height: 50px;
-    background-color: orange;
-    float: left;
-    border-bottom: 5px solid orangered;
+@keyframes wave {
+    from{color: #6666cc00;}
+    to{font-size: #6666ccff;}
 }
-#boby>.legs>div:first-child{
-    transform: rotate(15deg);
-    animation: run 0.25s 10;
-    
+#preloader span:first-child{
+    animation: wave 1s 5; 
 }
-#boby>.legs>div:last-child{
-    transform: rotate(-15deg);
-    animation: run 0.25s 10;
-    animation-delay: 0.125s;
-}
-@keyframes run{
-    from{ transform: rotate(-15deg); }
-    to{ transform: rotate(15deg); }
-}
-@keyframes move{
-    from {margin-left: 0;}
-    to {margin-left: 600px;}
-}
-#boby-wrapper{
-    border: 1px dotted green;
-    animation: tilt 0.25s 10;
-}
-@keyframes tilt{
-    from{ transform: rotate(-3deg); }
-    to{ transform: rotate(3deg); }
+#preloader span:last-child{
+    animation: wave 1s 5;
+    animation-delay: 0.5s; 
 }
