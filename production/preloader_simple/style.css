@@ -1,0 +1,38 @@
+/*CSS Reset*/
+body{
+    margin: 0;
+}
+/*Styles*/
+body{
+    background-color: #131339;
+}
+#preloader{
+    height: 5vh;
+    width: 5vh;
+    border: 0.1vh solid #6666cc;
+    /*margin-top: 45.5vh;
+    margin-left: auto;
+    margin-right: auto;*/
+    margin: 47.4vh auto;
+    color: #6666cc;
+    line-height: 5vh;
+    text-align: center;
+    letter-spacing: 1px;
+    animation: rot 1s 5;
+}
+/* animation */
+@keyframes rot{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@keyframes wave {
+    from{color: #6666cc00;}
+    to{font-size: #6666ccff;}
+}
+#preloader span:first-child{
+    animation: wave 1s 5; 
+}
+#preloader span:last-child{
+    animation: wave 1s 5;
+    animation-delay: 0.5s; 
+}
