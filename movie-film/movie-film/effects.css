@@ -1,0 +1,4 @@
+@keyframes sliding{
+    from{transform: translateX(0)}
+    to{transform: translateX(calc(100vw - 288vh + 9vw))}
+}
