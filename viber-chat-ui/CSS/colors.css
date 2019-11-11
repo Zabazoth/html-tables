@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.viberui-1-hex { color: #705CF2; }
+.viberui-2-hex { color: #6452D9; }
+.viberui-3-hex { color: #3E3B8C; }
+.viberui-4-hex { color: #1B2040; }
+.viberui-5-hex { color: #161F26; }
+
+/* Color Theme Swatches in RGBA */
+.viberui-1-rgba { color: rgba(112, 92, 242, 1); }
+.viberui-2-rgba { color: rgba(100, 82, 217, 1); }
+.viberui-3-rgba { color: rgba(62, 59, 140, 1); }
+.viberui-4-rgba { color: rgba(27, 32, 64, 1); }
+.viberui-5-rgba { color: rgba(22, 31, 38, 1); }
+
+/* Color Theme Swatches in HSLA */
+.viberui-1-hsla { color: hsla(248, 85, 65, 1); }
+.viberui-2-hsla { color: hsla(247, 63, 58, 1); }
+.viberui-3-hsla { color: hsla(242, 40, 39, 1); }
+.viberui-4-hsla { color: hsla(231, 40, 17, 1); }
+.viberui-5-hsla { color: hsla(206, 26, 11, 1); }
