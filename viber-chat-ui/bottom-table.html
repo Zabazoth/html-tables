@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Bottom-table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <style>
+        .bottom-bar__navigation{
+            background-color: #999;
+            display: table;
+        }
+        .bottom-bar__navigation>.navigation-links{
+            display: table-row;
+        }
+        .bottom-bar__navigation>ul>li{
+           display: table-cell;
+        }
+        .bottom-bar__navigation>ul>li i{
+         
+        }
+        .bottom-bar__navigation>ul>li>a{
+           
+        }
+    </style>
+ </head>
+ <body>
+    <nav class="bottom-bar__navigation">
+        <ul class="navigation-links">
+        <li>
+            <a href=""><i class="far fa-comments"></i>Chats</a>
+        </li>
+        <li>
+            <a href=""><i class="fas fa-phone-volume"></i>Calls</a>
+        </li>
+        <li>
+            <a href=""><i class="fas fa-hamburger"></i>More</a>
+        </li>
+    </ul>
+    </nav>
+</body>
+</html>

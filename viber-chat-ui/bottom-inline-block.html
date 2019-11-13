@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Bottom-bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <style>
+        .bottom-bar__navigation{
+            background-color: #999;
+            text-align: center;
+        }
+        .bottom-bar__navigation>ul>li{
+            display: inline-block;
+        }
+        .bottom-bar__navigation>ul>li i{
+            font-size: 40px;
+            display: block;
+        }
+        .bottom-bar__navigation>ul>li>a{
+            display: block;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    </style>
+ </head>
+ <body>
+    <nav class="bottom-bar__navigation">
+        <ul class="navigation-links">
+        <li>
+            <a href=""><i class="far fa-comments"></i>Chats</a>
+        </li>
+        <li>
+            <a href=""><i class="fas fa-phone-volume"></i>Calls</a>
+        </li>
+        <li>
+            <a href=""><i class="fas fa-hamburger"></i>More</a>
+        </li>
+    </ul>
+    </nav>
+</body>
+</html>
