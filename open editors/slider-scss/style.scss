@@ -1,0 +1,78 @@
+// variables - settings
+$w: 800px;
+$h: 600px;
+$dark-c: #333;
+$light-c: #bbb;
+$image_1: 'images/490-800x600.jpg';
+$step: 100px;
+
+body{
+    background-color: $dark-c;
+}
+@mixin center{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+@mixin effect_1($n){
+    @keyframes eff_1{
+        from{ opacity: 0;}
+        to{ opacity: 1; }
+       }
+       opacity: 0;
+       animation: eff_1 3s 1;
+       animation-delay: 0.1s * $n;
+       animation-fill-mode: forwards;
+    }
+    @mixin effect_2($n){
+        @keyframes eff_2-#{$n}{
+            from{ transform: translateX(0) translateY(0) rotate(0);}
+            @if random(2) == 2 {
+            to{ transform: translateX( random(1000) * 1px) translateY( random(1000) * 1px) rotate(random(720) * 1deg ); }
+           }
+            @else {
+               to {transform: translateX( random(1000) * -1px) translateY( random(1000) * -1px) rotate(random(720) * 1deg ); }}
+            }
+           animation: eff_2-#{$n} 3s infinite;
+        //    animation-delay: 0.1s * $n;
+           animation-fill-mode: forwards;
+           animation-direction: alternate;
+        }
+.slide{
+    width: $w;
+    height: $h;
+    // background-color: $light-c;
+    @include center;
+    div{
+        color: transparent;
+        width: $step;
+        height: $step;
+        background-color:red;
+        position: absolute;
+        background-image: url($image_1);
+        $top_n: 0;
+        $left_n: 0;
+            @for $n from 1 through 48 {
+                &:nth-child(#{$n}){
+                    top: $top_n * $step;
+                    left: $left_n * $step;
+                    background-position-x: - $left_n * $step;
+                    background-position-y: - $top_n * $step;
+                    // effects
+                    @include effect_2($n);
+                    // effects
+                }
+                $left_n: $left_n + 1;
+                @if $left_n == 8 {
+                    $left_n: 0;
+                    $top_n: $top_n + 1;
+                }
+            }    
+
+    }
+}
+
+
