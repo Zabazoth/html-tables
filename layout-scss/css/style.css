@@ -1,0 +1,58 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.section {
+  height: 100vh;
+}
+
+.section h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+.section h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+
+.section .important-text {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
+
+.section .row.row-ib {
+  background-color: red;
+}
+
+.section .row.row-ib div {
+  display: inline-block;
+  background-color: white;
+  width: 32%;
+  margin-right: 2%;
+}
+
+.section .row.row-ib div:last-child {
+  margin-right: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+#header-main {
+  background-color: #999;
+}
+
+#section-advantages {
+  background-color: #ccc;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
